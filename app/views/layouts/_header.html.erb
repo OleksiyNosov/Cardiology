@@ -1,0 +1,40 @@
+<header>
+    <div class="container">
+        <div class="row header-row">
+            <div class="logo">
+                <a href="#"> <%= image_tag("defaults/logo.png", alt: "logo") %></a>
+            </div>
+            <a href="#" class="btn-health-school">Школа "здоров'я"</a>
+            <nav>
+                <ul class="list-inline">
+                    <li><%= link_to "Головна", root_path %></li>
+                    <li><%= link_to "Новини", root_path %></li>
+                    <li><%= link_to "Батькам", for_parents_path %></li>
+                    <li><%= link_to "Лікування", treatment_path %></li>
+                    <li><%= link_to "Галерея", gallery_path %></li>
+                    <li><%= link_to "Про нас", about_us_path %></li>
+                    <li><%= link_to "Контакти", contacts_path %></li>
+                    <li><a href="#" class="health-link">Школа "здоров'я"</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="responsive-menu"><ul>
+      <li><%= link_to "Головна", root_path %></li>
+      <li><%= link_to "Новини", root_path %></li>
+      <li><%= link_to "Батькам", for_parents_path %></li>
+      <li><%= link_to "Лікування", treatment_path %></li>
+      <li><%= link_to "Галерея", gallery_path %></li>
+      <li><%= link_to "Про нас", about_us_path %></li>
+      <li><%= link_to "Контакти", contacts_path %></li>
+        <li><a href="#">Школа "здоров'я"</a></li>
+    </ul>
+    </div>
+    <div class="mobile-nav">
+        <div class="mobile-nav-button">
+            <div class="mobile-nav-button__line"></div>
+            <div class="mobile-nav-button__line"></div>
+            <div class="mobile-nav-button__line"></div>
+        </div>
+    </div>
+</header>
